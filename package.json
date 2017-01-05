@@ -35,7 +35,9 @@
     "lodash": "^3.10.1",
     "yeoman-generator": "^0.20.3"
   },
-  "devDependencies": {
 
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.12.2"
   }
 }

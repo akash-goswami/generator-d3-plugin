@@ -9,7 +9,8 @@
   "scripts": {
     "pretest": "script/pretest",
     "test": "script/test",
-    "prepublish": "script/prepublish"
+    "prepublish": "script/prepublish",
+    "watch": "script/prepublish --watch"
   },
   "repository": {
     "type": "git",
