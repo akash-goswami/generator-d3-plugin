@@ -4,20 +4,20 @@
   "description": "Yeoman generator for D3 v4 plugins",
   "license": "MIT",
   "main": "app/index.js",
-  "homepage": "{GITHUB_REPO_LINK}",
+  "homepage": "https://github.com/akash-goswami/generator-d3-plugin",
   "repository": {
     "type": "git",
-    "url": "{GIT_URL}"
+    "url": "https://github.com/akash-goswami/generator-d3-plugin.git"
   },
   "bugs": {
-    "url": "{GITHUB_REPO_LINK}/issues"
+    "url": "https://github.com/akash-goswami/generator-d3-plugin.git/issues"
   },
   "author": {
     "name": "Akash Goswami",
     "url": "https://github.com/akash-goswami"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "script/test"
   },
   "files": [
     "app"
@@ -36,6 +36,6 @@
     "yeoman-generator": "^0.20.3"
   },
   "devDependencies": {
-    
+
   }
 }
