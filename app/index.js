@@ -2,9 +2,8 @@
 
 var _ = require('lodash'),
     chalk = require('chalk'),
-    yeoman = require('yeoman-generator');
-
-var D3PluginSetupScaffolder = yeoman.generators.Base.extend({
+    yeoman = require('yeoman-generator'),
+    D3PluginSetupScaffolder = yeoman.generators.Base.extend({
 	init: function() {
 		var prompts,
             done = this.async();
@@ -130,8 +129,6 @@ var D3PluginSetupScaffolder = yeoman.generators.Base.extend({
 	},
 
 	end: function() {
-		var chdir = this.createDir ? '"cd ' + this.packageName + '" then ' : '';
-
 		this.log(
 			'\n' + chalk.green.underline('Your new d3 plugin is ready!') +
 			'\n' +
