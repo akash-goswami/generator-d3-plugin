@@ -121,7 +121,11 @@ var _ = require('lodash'),
             this.template('script/_prepublish', 'script/prepublish');
             this.template('script/_test', 'script/test');
             this.template('script/_pretest', 'script/pretest');
-		}
+		},
+
+        example: function () {
+            this.template('example/_index.html', 'example/index.html');
+        }
 	},
 
 	install: function() {
@@ -133,6 +137,7 @@ var _ = require('lodash'),
 			'\n' + chalk.green.underline('Your new d3 plugin is ready!') +
 			'\n' +
 			'\nYour plugin is in /src' +
+            '\nYour example is in /example' +
 			'\n' +
             '\nTo build it run ' + chalk.red.bold('npm run pretest') + ' followed by ' +
             chalk.red.bold('npm run prepublish') +
