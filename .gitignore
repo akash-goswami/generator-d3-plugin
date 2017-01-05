@@ -14,6 +14,9 @@ coverage.html
 .cover*
 .coveralls.yml
 
+# Generated files
+d3-*/
+
 # Dependency directory
 node_modules
 
