@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Run test first
+./script/test
+
+build_dir="build"
+entry_point="index.js"
+target_point="<%= packageName %>"
+
+rollup -c --watch -f umd -n d3 -o $build_dir/$target_point.js -- $entry_point
+uglifyjs $build_dir/$target_point.js -c negate_iife=false -m -o $build_dir/$build_dir.min.js
