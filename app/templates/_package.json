@@ -10,7 +10,8 @@
     "pretest": "script/pretest",
     "test": "script/test",
     "prepublish": "script/prepublish",
-    "watch": "script/prepublish --watch"
+    "watch": "script/prepublish --watch",
+    "start": "script/start"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "babel-eslint": "^7.1.1",
     "eslint": "^3.12.2",
     "json2module": "0.0",
+    "http-server": "^0.9.0",
     "package-preamble": "0.0",
     "rimraf": "2",
     "rollup": "0.36",

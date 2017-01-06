@@ -4,8 +4,18 @@
 ./script/test
 
 build_dir="build"
+example_dir="example"
 entry_point="index.js"
-target_point="<%= packageName %>"
+target_point="d3-simple-plugin"
 
-rollup -c $1  -f umd -n d3 -o $build_dir/$target_point.js -- $entry_point
-uglifyjs $build_dir/$target_point.js -c negate_iife=false -m -o $build_dir/$build_dir.min.js
+rollup -c $1 -f umd -n d3 -o $build_dir/$target_point.js -- $entry_point
+uglifyjs $build_dir/$target_point.js -c negate_iife=false -m -o $build_dir/$target_point.min.js
+
+# Delete example/build dir
+rm -rf $example_dir/$build_dir
+
+# Create a build folder
+mkdir $example_dir/$build_dir/
+
+#Copy build folder to example
+cp -a $build_dir/ $example_dir/$build_dir/

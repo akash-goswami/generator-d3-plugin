@@ -121,6 +121,7 @@ var _ = require('lodash'),
             this.template('script/_prepublish', 'script/prepublish');
             this.template('script/_test', 'script/test');
             this.template('script/_pretest', 'script/pretest');
+            this.template('script/_start', 'script/start');
 		},
 
         example: function () {

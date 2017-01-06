@@ -1,4 +1,4 @@
-dist/*
+example/build/*
 lib/*
 node_modules/*
 build/*
