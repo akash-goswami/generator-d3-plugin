@@ -139,9 +139,13 @@ var _ = require('lodash'),
 			'\n' +
 			'\nYour plugin is in /src' +
             '\nYour example is in /example' +
-			'\n' +
+            '\n'+
+            '\n'+
+			'\n' + (this.createDir ? ('do ' + chalk.red.bold('cd ' + this.packageName)) : '') +
             '\nTo build it run ' + chalk.red.bold('npm run pretest') + ' followed by ' +
             chalk.red.bold('npm run prepublish') +
+            '\nTo start a local web server with live reloading, run ' + chalk.red.bold('npm run watch') + ' followed by ' +
+            chalk.red.bold('npm start') +
             '\n' +
 			'\n'
 		);

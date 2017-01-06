@@ -10,8 +10,10 @@
     "pretest": "script/pretest",
     "test": "script/test",
     "prepublish": "script/prepublish",
-    "watch": "script/prepublish --watch",
-    "start": "script/start"
+    "start": "script/start",
+    "dev": "NODE_ENV=dev && script/prepublish --watch",
+    "reload": "livereload 'example/build/'",
+    "watch": "npm-run-all --parallel reload dev"
   },
   "repository": {
     "type": "git",
@@ -40,6 +42,9 @@
     "rollup-watch": "^3.1.0",
     "tape": "4",
     "uglify-js": "2",
-    "uglifyjs": "^2.4.10"
+    "uglifyjs": "^2.4.10",
+    "livereload": "^0.6.0",
+    "npm-run-all": "^4.0.0",
+    "rollup-plugin-replace": "^1.1.1"
   }
 }
