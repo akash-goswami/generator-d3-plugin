@@ -111,7 +111,7 @@ var _ = require('lodash'),
             this.template('_rollup.node.js', 'rollup.node.js');
 			this.template('_rollup.config.js', 'rollup.config.js');
 			this.template('_package.json', 'package.json');
-			this.template('_readme.md', 'README.md');
+			this.template('_README.md', 'README.md');
 			this.template('_LICENSE', 'LICENSE');
 		},
 		component: function() {
